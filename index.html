@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG CLUB</title>
+    <link rel="icon" href="images/logo ag.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background-glow"></div>
+
+    <header>
+        <nav class="nav-head">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#join">Únetenos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="nosotros" id="nosotros">
+        <div class="nos-container">
+            <div class="logo-nos">
+                <img src="images/logo ag.png" alt="logo">
+            </div>
+            <div class="nos-presentation">
+                <h1><span>AG</span> CLUB</h1>
+                <p>Un estudio especializado en la creación de eventos de Minecraft. Nos centramos en la producción de configuraciones, códigos de programación, visuales y más!</p>
+            </div>
+        </div>
+        
+        <a href="#proyectos" class="scroll-down">
+            <div class="arrow"></div>
+        </a>
+    </section>
+
+    <section class="main-container" id="proyectos">
+    <div class="carousel-wrapper">
+        <a href="#" id="slide-link" target="_blank">
+            <div class="carousel-slide" id="slide-bg">
+                
+                <div class="info-card">
+                    <h2 id="slide-title">Cargando...</h2>
+                    <p id="slide-desc">Espere un momento.</p>
+                </div>
+
+            </div>
+        </a>
+
+        <div class="carousel-footer-outside">
+            <div class="navigation-arrows">
+                <button class="btn-nav" onclick="changeSlide(-1)">‹</button>
+                <button class="btn-nav" onclick="changeSlide(1)">›</button>
+            </div>
+            <div class="pagination-dots" id="dots-container"></div>
+        </div>
+    </div>
+</section>
+
+<section class="join-discord" id="join">
+    <div class="discord-card">
+        <div class="discord-info">
+            <img src="images/logods.png" alt="Discord Logo" class="discord-logo">
+            <div class="discord-text">
+                <h2>Únete a nuestra comunidad</h2>
+                <p>Forma parte de AG Estudio. Entérate de nuevos eventos.</p>
+            </div>
+        </div>
+        <a href="https://discord.gg/RHh7WM8T7X" target="_blank" class="btn-discord">
+            Unirse al Discord
+        </a>
+    </div>
+</section>
+<section class="join-x" id="join-x">
+    <div class="x-card">
+        <div class="x-info">
+            <img src="images/logox.png" alt="X logo" class="x-logo">
+            <div class="x-text">
+                <h2>Síguenos en X</h2>
+                <p>Mantente al día con las últimas noticias, avances de proyectos y anuncios rápidos de AG Estudio.</p>
+            </div>
+        </div>
+        <a href="https://x.com/_AGSTUDIOS" target="_blank" class="btn-x">
+            Seguir en X
+        </a>
+    </div>
+</section>
+<section class="join-tiktok" id="join-tiktok">
+    <div class="tiktok-card">
+        <div class="tiktok-info">
+            <img src="images/logotik.png" alt="logo-tik" class="tik-logo">
+            <div class="tiktok-text">
+                <h2>Síguenos en TikTok</h2>
+                <p>Mira los mejores clips de nuestros eventos, detrás de cámaras y contenido exclusivo en formato vertical.</p>
+            </div>
+        </div>
+        <a href="https://www.tiktok.com/@.agclub?lang=es" target="_blank" class="btn-tiktok">
+            Ver TikTok
+        </a>
+    </div>
+</section>
+
+<section class="contacto" id="contacto">
+    <div class="contacto-container">
+        <div class="contacto-header">
+            <h2>Contacto</h2>
+            <p>¿Tienes un proyecto en mente o alguna duda sobre los eventos? Escríbeme.</p>
+        </div>
+
+        <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="contacto-form">
+            <div class="input-group">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo" required>
+            </div>
+            <input type="text" name="asunto" placeholder="Asunto" required>
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <img src="images/logo ag.png" alt="AG Estudio Logo" class="footer-logo">
+                <p>Creando experiencias únicas en Minecraft y eventos digitales de alto nivel.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Navegación</h4>
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 AG Estudio. Todos los derechos reservados.</p>
+            <div class="footer-socials">
+                <a href="https://discord.gg/RHh7WM8T7X" title="Discord">Di</a>
+                <a href="https://x.com/_AGSTUDIOS" title="X (Twitter)">X</a>
+                <a href="https://www.tiktok.com/@.agclub?lang=es" title="TikTok">Tk</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
